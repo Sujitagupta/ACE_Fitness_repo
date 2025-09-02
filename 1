@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ACEest Fitness and Gym</title>
+</head>
+<body>
+    <h1>Welcome to ACEest Fitness and Gym!</h1>
+
+    <!-- Add Workout -->
+    <h2>Add Workout</h2>
+    <form action="/add_workout_form" method="post">
+        <label for="gym_id">Gym ID:</label>
+        <input type="text" id="gym_id" name="gym_id" required><br><br>
+
+        <label for="workout">Workout:</label>
+        <input type="text" id="workout" name="workout" required><br><br>
+
+        <label for="duration">Duration (minutes):</label>
+        <input type="number" id="duration" name="duration" required><br><br>
+
+        <button type="submit">Add Workout</button>
+    </form>
+
+    <hr>
+
+    <!-- View Workouts -->
+    <h2>View Workouts</h2>
+    <form action="/view_workouts" method="post">
+        <label for="view_gym_id">Gym ID:</label>
+        <input type="text" id="view_gym_id" name="gym_id" required><br><br>
+
+        <button type="submit">View Workouts</button>
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+i<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workouts - ACEest Fitness</title>
+</head>
+<body>
+    <h1>Workouts for Gym ID: {{ gym_id }}</h1>
+
+    {% if workouts %}
+        <ul>
+            {% for w in workouts %}
+                <li>{{ w.workout }} - {{ w.duration }} minutes</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No workouts logged for this Gym ID yet.</p>
+    {% endif %}
+
+    <br>
+    <a href="/"><button>⬅ Back to Home</button></a>
+</body>
+</html>
+
